@@ -64,10 +64,14 @@ h1{font-size: var(--fs-h1);}
     background: none;
     border: none;
     font-family: inherit;
+    font-size: inherit;
+    font-weight: var(--fw-bold);
 }
 .btn--primary{
     background-color: var(--clr-white);
     color: var(--clr-violet);
+    padding: .8rem 5.5rem;
+    border-radius: 1.6rem;
 }
 /* ---- Header Styles ---- */
 .header{
