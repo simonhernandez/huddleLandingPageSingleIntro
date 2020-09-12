@@ -70,4 +70,39 @@ h1{font-size: var(--fs-h1);}
     color: var(--clr-violet);
 }
 /* ---- Header Styles ---- */
+.header{
+    height: 100vh;
+    background-color: var(--clr-violet);
+    background-blend-mode: lighten;
+    background-image: url(/images/bg-mobile.svg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: var(--clr-white);
+    text-align: center;
+}
+.header > *:not(:last-child),
+.hero-container > *:not(:last-child){
+    margin-bottom: 4rem;
+}
+.hero__text-container > *:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+.logo-container{
+    max-width: 150px;
+}
+.social__list,
+.social__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social__item{
+    margin-right: 1rem;
+    border: 1px solid var(--clr-white);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 1rem;
+}
 /* ---- Media Queries ---- */
