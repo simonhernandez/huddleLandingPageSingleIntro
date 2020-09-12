@@ -11,13 +11,14 @@
 
     --fs-h1: 1.5rem;
     --fs-big: 1.3rem;
-    --fs-normal: .938rem;
+    --fs-normal: .978rem;
     --fs-small: .813rem;
     --fs-icon: 1.2rem;
 
     --fw-reg: 400;
     --fw-bold: 700;
     /* Box Shadow */
+    --bxs-btn: 2px 2px 10px -2.5px rgba(0,0,0,0.75);
     /* Others */
 }
 @media screen and (min-width:768px){
@@ -73,12 +74,13 @@ h1{font-size: var(--fs-h1);}
 .btn--primary{
     background-color: var(--clr-white);
     color: var(--clr-violet);
-    padding: .8rem 5.5rem;
+    padding: .8rem 5rem;
     border-radius: 1.6rem;
+    box-shadow: var(--bxs-btn);
 }
 /* ---- Header Styles ---- */
 .header{
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--clr-violet);
     background-blend-mode: lighten;
     background-image: url(/images/bg-mobile.svg);
@@ -90,13 +92,13 @@ h1{font-size: var(--fs-h1);}
 }
 .header .wrapper> *:not(:last-child),
 .hero-container > *:not(:last-child){
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 .hero__text-container > *:not(:last-child){
     margin-bottom: 1.5rem;
 }
 .logo-container{
-    max-width: 150px;
+    max-width: 125px;
 }
 .hero__text-container{
     line-height: 1.6;
