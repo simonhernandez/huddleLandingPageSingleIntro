@@ -9,7 +9,7 @@
     --ff-primary: 'Poppins', sans-serif;
     --ff-secondary: 'Open Sans', sans-serif;
 
-    --fs-h1: 2rem;
+    --fs-h1: 1.5rem;
     --fs-big: 1.3rem;
     --fs-normal: .938rem;
     --fs-small: .813rem;
@@ -58,13 +58,16 @@ img{
 /* Typography */
 h1{font-size: var(--fs-h1);}
 /* Layout */
+.wrapper{
+    padding: 2.5rem;
+}
 /* Components */
 .btn{
     cursor: pointer;
     background: none;
     border: none;
     font-family: inherit;
-    font-size: inherit;
+    font-size: var(--fs-small);
     font-weight: var(--fw-bold);
 }
 .btn--primary{
@@ -85,9 +88,9 @@ h1{font-size: var(--fs-h1);}
     color: var(--clr-white);
     text-align: center;
 }
-.header > *:not(:last-child),
+.header .wrapper> *:not(:last-child),
 .hero-container > *:not(:last-child){
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .hero__text-container > *:not(:last-child){
     margin-bottom: 1.5rem;
@@ -95,14 +98,22 @@ h1{font-size: var(--fs-h1);}
 .logo-container{
     max-width: 150px;
 }
+.hero__text-container{
+    line-height: 1.6;
+}
+.hero__description{
+    opacity: .8;
+}
 .social__list,
 .social__item{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.social__item{
+.social__list > *:not(:last-child){
     margin-right: 1rem;
+}
+.social__item{
     border: 1px solid var(--clr-white);
     height: 30px;
     width: 30px;
