@@ -100,9 +100,6 @@ h1{font-size: var(--fs-h1);}
 .logo-container{
     max-width: 125px;
 }
-.hero__img{
-    max-width: 720px;
-}
 .hero__text-container{
     line-height: 1.6;
 }
@@ -153,6 +150,7 @@ h1{font-size: var(--fs-h1);}
     }
     .hero__img{
         width: 100%;
+        max-width: 720px;
     }
     .social-container{
         grid-column: 2/-1;
