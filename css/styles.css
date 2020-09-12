@@ -3,16 +3,71 @@
 /* ---- Custom Properties ---- */
 :root{
     /* Colors */
+    --clr-white: #fff;
+    --clr-violet: hsl(257, 40%, 49%); 
     /* Fonts and typography */
-    /* Z Index */
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+
+    --fs-h1: 2rem;
+    --fs-big: 1.3rem;
+    --fs-normal: .938rem;
+    --fs-small: .813rem;
+    --fs-icon: 1.2rem;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
     /* Box Shadow */
     /* Others */
-
+}
+@media screen and (min-width:768px){
+    :root{
+        --fs-h1: 2rem;
+        --fs-big: 1.3rem;
+        --fs-normal: .938rem;
+        --fs-small: .813rem;
+        --fs-icon: 1.2rem;
+    }
 }
 /* ---- General Styles ---- */
 /* Base */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-reg);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* Typography */
+h1{font-size: var(--fs-h1);}
 /* Layout */
 /* Components */
+.btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+}
+.btn--primary{
+    background-color: var(--clr-white);
+    color: var(--clr-violet);
+}
 /* ---- Header Styles ---- */
 /* ---- Media Queries ---- */
